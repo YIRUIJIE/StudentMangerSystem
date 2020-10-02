@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg3" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="学生信息修改"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="学\t\t号：" />
+
+        <TextView
+            android:id="@+id/repairnumtext"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="59dp" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="专\t\t业：" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:entries="@array/proname"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/LinearLayout01"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="12dp" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年\t\t龄：" />
+
+        <EditText
+            android:id="@+id/repairageedit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout01"
+        android:layout_alignTop="@+id/LinearLayout01"
+        android:layout_marginTop="52dp"
+        android:gravity="center|center_horizontal" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="备\t\t注：" />
+
+        <EditText
+            android:id="@+id/repairmarkedit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout03"
+        android:layout_below="@+id/LinearLayout03"
+        android:layout_marginTop="14dp" >
+
+        <Button
+            android:id="@+id/repairsavebutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="保存修改" />
+
+        <Button
+            android:id="@+id/repairdelbutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="删除信息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="性\t\t别：" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/repairradiomen"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/repairradiowoman"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="姓\t\t名：" />
+
+        <TextView
+            android:id="@+id/repairnametext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>

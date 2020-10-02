@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proname">
+        <item>计算机应用</item>
+        <item>计算机网络</item>
+        <item>移动互联开发</item>
+        <item>WEB前端开发</item>
+    </string-array>
+</resources>

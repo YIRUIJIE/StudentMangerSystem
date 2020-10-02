@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bysj.yrj"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <!-- 读取手机状态和身份 -->
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <!-- 拥有完全的网络访问权限 -->
+   <uses-permission android:name="android.permission.INTERNET" />
+   <!-- 读取手机状态和身份 -->
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <!-- 修改或删除您的USB存储设备中的内容 -->
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   <!-- 查看网络连接 -->
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_Main" >
+        </activity>
+        <activity
+            android:name=".AddStudentInfoActivity"
+            android:label="@string/title_activity_add_info" >
+        </activity>
+        <activity
+            android:name=".PassRepairActivity"
+            android:label="@string/title_activity_pass_repair" >
+        </activity>
+        <activity
+            android:name=".ShowStudentInfoActivity"
+            android:label="@string/title_activity_show_student_info" >
+        </activity>
+        <activity
+            android:name=".WeihuStudentInfoActivity"
+            android:label="@string/title_activity_weihu_student_info" >
+        </activity>
+        <activity
+            android:name=".RepairStudentInfoActivity"
+            android:label="@string/title_activity_repair_student_info" >
+        </activity>
+        <activity
+            android:name=".AddStudentScoreActivity"
+            android:label="@string/title_activity_add_student_score" >
+        </activity>
+        <activity
+            android:name=".ShowStudentScoreActivity"
+            android:label="@string/title_activity_show_student_score" >
+        </activity>
+        <activity
+            android:name=".WeihuStudentScoreActivity"
+            android:label="@string/title_activity_weihu_student_score" >
+        </activity>
+        <activity
+            android:name=".RepairStudentScoreActivity"
+            android:label="@string/title_activity_repair_student_score" >
+        </activity>
+    </application>
+
+</manifest>

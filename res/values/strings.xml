@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">学生信息管理系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_main_exit">退出</string>
+    <string name="title_activity_register">新用户注册</string>
+    <string name="str_reg_title">新用户注册</string>
+    <string name="str_reg_pass1">密\t\t\t码：</string>
+    <string name="str_reg_pass2">密码重复：</string>
+    <string name="str_reg_save">注\t\t\t册</string>
+    <string name="title_activity_Main">学生信息管理</string>
+    <string name="title_activity_add_info">学生信息添加</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pass_repair">用户密码修改</string>
+    <string name="title_activity_show_student_info">学生信息查询</string>
+    <string name="title_activity_weihu_student_info">学生信息维护</string>
+    <string name="title_activity_repair_student_info">学生信息修改</string>
+    <string name="title_activity_add_student_score">学生成绩添加</string>
+    <string name="title_activity_show_student_score">学生成绩查询</string>
+    <string name="title_activity_weihu_student_score">学生成绩维护</string>
+    <string name="title_activity_repair_student_score">学生成绩修改</string>
+
+</resources>
